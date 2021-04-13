@@ -1,0 +1,15 @@
+/*@font-face {*/
+/*    font-family: "SF-Pro";*/
+/*    src: url("/Font/SF-Pro-Display-Regular.otf") format("otf")*/
+/*}*/
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
