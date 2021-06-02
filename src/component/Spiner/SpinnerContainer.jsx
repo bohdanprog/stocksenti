@@ -3,7 +3,7 @@ import {Spin} from "antd";
 
 const SpinnerContainer = () => {
   return (
-    <Spin tip="Loading...">
+    <Spin style={{marginLeft:'10px'}} tip="Loading...">
     </Spin>
   )
 }

@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
 .logo{
     font-family: 'Mukta', sans-serif;
     letter-spacing:-0.025em;
     font-size:26px;
     font-weight: normal;
     color:grey;
+		animation: App-logo-spin infinite 20s linear;
 }
 .App {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
 /*#components-layout-demo-top-side .logo {*/
 /*    float: left;*/
 /*    width: 120px;*/

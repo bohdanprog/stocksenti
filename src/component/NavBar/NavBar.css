@@ -1,6 +1,12 @@
 .navbar {
   background-color: white;
-    padding: 1rem 1rem;
+    padding: 1rem 0;
+}
+
+.logo {
+	height: 32px;
+	margin-left: 1rem;
+	animation: App-logo-spin infinite 20s linear;
 }
 
 @media (min-width: 992px) {
@@ -9,7 +15,3 @@
   }
 }
 
-.logo {
-  height: 32px;
-  margin-left: 1rem;
-}

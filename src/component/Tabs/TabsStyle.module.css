@@ -1,0 +1,80 @@
+.containerView {
+	display: flex;
+	align-items: center;
+	margin: 0 0 0.5rem 0.5rem;
+}
+.containerLogo{
+	display: block;
+	align-items: center;
+}
+.containerStocks {
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+}
+
+.stockPercent {
+	font-size: 16px;
+	display: block;
+	margin-left: 0.25rem;
+}
+
+.stockInfo{
+	display: flex;
+	align-items: center;
+}
+
+.stockSymbol {
+	display: block;
+	font-size:22px;
+}
+.stockValue {
+	display: block;
+	font-size:22px;
+}
+
+@media (min-width: 350px) and (max-width: 992px) {
+	.containerView {
+		display: flex;
+		align-items: center;
+		margin: 0 0 0.5rem 0.5rem;
+	}
+
+	.stockSymbol {
+		/*display: block;*/
+		padding:0;
+		margin:0;
+		font-size: 16px;
+		/*align-items: center;*/
+	}
+	.stockValue {
+		/*display: block;*/
+		padding:0;
+		margin:0;
+		font-size: 16px;
+		/*align-items: center;*/
+	}
+	.containerLogo{
+		display: block;
+		align-items: center;
+	}
+	.containerStocks {
+		margin-left: 5px;
+		display: block;
+		align-items: center;
+	}
+
+	.stockPercent {
+		font-size: 12px;
+		/*display: block;*/
+		/*align-items: center;*/
+		margin-left: 0.25rem;
+	}
+
+	div .stockInfo p {
+		display: flex;
+		align-items: center;
+	}
+}
+
+
