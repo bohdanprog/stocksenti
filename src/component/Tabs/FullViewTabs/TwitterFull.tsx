@@ -6,7 +6,7 @@ import {StatisticsTwitter} from "../../Statistic/TwitterStatistics/StatisticsTwi
 import {TwitterTabs} from "../TwitterTabs";
 import {MainInfoAboutInstrument} from "./MainInfoAboutInstrument";
 import {useDispatch, useSelector} from "react-redux";
-import {getTwitterNews} from "../../../Selector/selector";
+import {getTwitterNews, twitterLoading} from "../../../Selector/selector";
 import {requestTwitterNewsLastData} from "../../../redux/TwitterNewsReducer";
 import {TwitterSentimentType} from "../../../type/types";
 
@@ -21,6 +21,7 @@ type TwitterProps = {
 
 export const TwitterFull: React.FC<TwitterProps> = React.memo(({instrument, instrumentphoto, stocksymbols, lastValueData, twitterSentiment}) =>  {
   let dispatch = useDispatch()
+  let loading = useSelector(twitterLoading);
   useEffect(() => {
     dispatch(requestTwitterNewsLastData(instrument));
   }, [dispatch,instrument]);
@@ -37,7 +38,7 @@ export const TwitterFull: React.FC<TwitterProps> = React.memo(({instrument, inst
       </Row>
       <Row>
         <Col xs={{span: 24}} xxl={{span: 24}}>
-          <TwitterTabs logo={instrumentphoto} instrument={instrument} twitterNews={twitterNews} twitterSentiment={twitterSentiment}/>
+          <TwitterTabs logo={instrumentphoto} loading={loading} instrument={instrument} twitterNews={twitterNews} twitterSentiment={twitterSentiment}/>
         </Col>
       </Row>
     </Content>

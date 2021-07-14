@@ -9,9 +9,9 @@ const StatisticsArticlePositive = ({value, percent}) => {
       <Col span={24}>
         <Card bordered={false} size="small">
           <Statistic  suffix={<RiseOutlined />} value={value}
-                     valueStyle={{color: '#3f8600', fontSize: '18px'}}/>
-          <Statistic  suffix="%" value={percent} precision={1}
                      valueStyle={{color: '#3f8600', fontSize: '16px'}}/>
+          <Statistic  suffix="%" value={percent} precision={1}
+                     valueStyle={{color: 'grey', fontSize: '10px'}}/>
         </Card>
       </Col>
     </Row>

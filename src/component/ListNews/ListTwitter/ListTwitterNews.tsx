@@ -26,13 +26,12 @@ export const ListTwitterNews:React.FC<PropsType> = React.memo(({logo,date, conte
     let publicDate:any = date;
     let timeAgoDate:any = Number(currentDate) - Number(publicDate);
     moment(timeAgoDate).format("DD-MM-YYYY hh:mm");
-
-  const actions = [<div style={{float:'right'}}><span style={{marginRight:'10px'}}>{location}</span><span>{diff}</span></div>];
+  const actions = [<div style={{float:'right'}}><span style={{marginRight:'0px'}}>{location}</span><span>{diff}</span></div>];
     return (
         <React.Fragment>
             <List.Item  actions={actions} className={classes.card} style={{margin:'5px',padding:'8px'}}>
-              <List.Item.Meta key={id} avatar={<Avatar alt={'avatar'} size={32} src={logo}/>}
-               description={<SentimentTwitterTitle sentiment={sentiment} sentimentscore={sentimentscore}/>}/>
+              <List.Item.Meta key={id} avatar={<Avatar alt={'avatar'} size={{ xs: 44, xxl: 50}}  src={logo}/>}
+              style={{marginBottom:'3px'}} description={<SentimentTwitterTitle sentiment={sentiment} sentimentscore={sentimentscore}/>}/>
                 <div>{content}</div>
             </List.Item>
         </React.Fragment>

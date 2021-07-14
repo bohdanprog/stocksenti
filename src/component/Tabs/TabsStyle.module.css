@@ -9,13 +9,14 @@
 }
 .containerStocks {
 	margin-left: 5px;
-	display: flex;
+	display: block;
 	align-items: center;
 }
 
 .stockPercent {
-	font-size: 16px;
-	display: block;
+	/*align-items: baseline;*/
+	float:bottom;
+	font-size: 12px;
 	margin-left: 0.25rem;
 }
 
@@ -25,12 +26,14 @@
 }
 
 .stockSymbol {
-	display: block;
-	font-size:22px;
+	padding:0;
+	margin:0;
+	font-size: 16px;
 }
 .stockValue {
-	display: block;
-	font-size:22px;
+	padding:0;
+	margin:0;
+	font-size: 16px;
 }
 
 @media (min-width: 350px) and (max-width: 992px) {
@@ -41,18 +44,14 @@
 	}
 
 	.stockSymbol {
-		/*display: block;*/
 		padding:0;
 		margin:0;
 		font-size: 16px;
-		/*align-items: center;*/
 	}
 	.stockValue {
-		/*display: block;*/
 		padding:0;
 		margin:0;
 		font-size: 16px;
-		/*align-items: center;*/
 	}
 	.containerLogo{
 		display: block;
@@ -66,12 +65,10 @@
 
 	.stockPercent {
 		font-size: 12px;
-		/*display: block;*/
-		/*align-items: center;*/
 		margin-left: 0.25rem;
 	}
 
-	div .stockInfo p {
+	.stockInfo p {
 		display: flex;
 		align-items: center;
 	}

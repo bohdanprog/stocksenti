@@ -65,6 +65,19 @@ export interface TwitterSentimentType {
   "tweetperiodsbagofwords": string
 }
 
+export interface ChartI {
+  "createdDate": string,
+  "tweetCount": number,
+  "tweetPositiveCount": number,
+  "tweetNegativeCount": number,
+  "tweetReach": number,
+  "tweetPositiveReach": number,
+  "tweetNegativeReach": number,
+  "stockValue": number,
+  "googleNewsCount": number,
+  "googleNewsPositiveCount": number,
+  "googleNewsNegativeCount": number
+}
 export type TwitterNewsType = {
   "id": number
   "content": string

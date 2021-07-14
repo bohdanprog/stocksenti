@@ -9,10 +9,11 @@ import {GoogleNewsType, GoogleSentimentType} from "../../type/types";
 interface PropsType {
   instrument:string
   googleNews: Array<GoogleNewsType>
-  googleSentiment: Array <GoogleSentimentType>
+  googleSentiment: Array<GoogleSentimentType>
+  loading:boolean
 }
 
-export const GoogleTabs: React.FC<PropsType> = React.memo(({instrument, googleNews, googleSentiment}) => {
+export const GoogleTabs: React.FC<PropsType> = React.memo(({instrument, googleNews, googleSentiment, loading}) => {
   return (
     <Layout className={classes.containerTabs}>
         <ButtonGoogle instrument={instrument}/>
@@ -21,7 +22,7 @@ export const GoogleTabs: React.FC<PropsType> = React.memo(({instrument, googleNe
       </Row>
       <Row>
         <Col xs={{span: 24}} xxl={{span: 24}}>
-          <ListGoogleContainer instrument = {instrument} googleNews={googleNews}/>
+          <ListGoogleContainer loading={loading} googleNews={googleNews}/>
         </Col>
       </Row>
     </Layout>

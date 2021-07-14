@@ -1,7 +1,7 @@
 import React from 'react';
 import {Button, Space} from "antd";
 import {BiCalendarWeek, BsCalendar} from "react-icons/all";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {
   requestGoogleSentimentDay,
   requestGoogleSentimentMonth,
@@ -12,10 +12,12 @@ import {
   requestStocksWeek,
   requestStocksYear
 } from "../../redux/stocksReducer";
-
+import {setButtonLoading} from "../../Selector/selector";
+import classes from "./ButtonStyle.module.css";
 
 export const ButtonGoogle = ({instrument}) => {
-  let dispatch = useDispatch()
+  let dispatch = useDispatch();
+  let buttonLoading = useSelector(setButtonLoading);
   const getStocksAndGoogleSentimentDayData = (instrument) => {
     dispatch(requestStocksDay(instrument));
     dispatch(requestGoogleSentimentDay(instrument));
@@ -33,14 +35,14 @@ export const ButtonGoogle = ({instrument}) => {
     dispatch(requestGoogleSentimentYear(instrument));
   }
   return (
-    <Space align={'center'} style={{marginLeft: '5px'}}>
-      <Button size={"middle"} type="primary" icon={<BiCalendarWeek style={{marginRight: '5px'}}/>}
+    <Space align={'center'} className={classes.ButtonContainer}>
+      <Button size={"middle"} loading={buttonLoading} type="primary" icon={<BiCalendarWeek style={{marginRight: '5px', alignItems:'center'}}/>}
               onClick={() => {getStocksAndGoogleSentimentDayData(instrument)}}>Day</Button>
-      <Button size={"middle"} type="primary" icon={<BiCalendarWeek style={{marginRight: '5px'}}/>}
+      <Button size={"middle"} loading={buttonLoading} type="primary" icon={<BiCalendarWeek style={{marginRight: '5px', alignItems:'center'}}/>}
               onClick={() => {getStocksAndGoogleSentimentWeekData(instrument)}}>Week</Button>
-      <Button size={"middle"} type="primary" icon={<BsCalendar style={{marginRight: '5px'}}/>}
+      <Button size={"middle"} loading={buttonLoading} type="primary" icon={<BsCalendar style={{marginRight: '5px', alignItems:'center'}}/>}
               onClick={() => {getStocksAndGoogleSentimentMonthData(instrument)}}>Month</Button>
-      <Button size={"middle"} type="primary" icon={<BiCalendarWeek style={{marginRight: '5px'}}/>}
+      <Button size={"middle"} loading={buttonLoading} type="primary" icon={<BiCalendarWeek style={{marginRight: '5px', alignItems:'center'}}/>}
               onClick={() => {getStocksAndGoogleSentimentYearData(instrument)}}>Year</Button>
     </Space>
   )

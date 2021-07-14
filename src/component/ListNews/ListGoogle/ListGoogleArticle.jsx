@@ -1,18 +1,15 @@
 import React from 'react';
-import {FallOutlined, RiseOutlined} from "@ant-design/icons";
+import classes from "../List.module.css";
 
 export let ListGoogleArticle = ({articlesentence, articlesentiment, sentimentscore, sentenceid}) => {
   return (
     <React.Fragment>
-      {articlesentiment === 'negative' &&
-      <p key={sentenceid} style={{margin: '0', width: '100%'}}>{articlesentence}&nbsp;<span
-        style={{color: 'red'}}>({articlesentiment} {sentimentscore} <FallOutlined/>)</span></p>}
-      {articlesentiment === 'neutral' &&
-      <p key={sentenceid} style={{margin: '0', width: '100%'}}>{articlesentence}&nbsp;<span
-        style={{color: '#649DD1'}}> ({articlesentiment} {sentimentscore})</span></p>}
-      {articlesentiment === 'positive' &&
-      <p key={sentenceid} style={{margin: '0', width: '100%'}}>{articlesentence}&nbsp; <span
-        style={{color: '#3f8600', alignItems: 'end'}}>({articlesentiment} {sentimentscore} <RiseOutlined/>)</span></p>}
+      {articlesentiment === 'negative' && <p key={sentenceid} className={classes.sentimentGTContainer}>{articlesentence}&nbsp;
+        <span className={classes.sentimentGANeg}>({articlesentiment} {sentimentscore})</span></p>}
+      {articlesentiment === 'neutral' && <p key={sentenceid} className={classes.sentimentGTContainer}>{articlesentence}&nbsp;
+        <span className={classes.sentimentGANeut}> ({articlesentiment} {sentimentscore})</span></p>}
+      {articlesentiment === 'positive' && <p key={sentenceid} className={classes.sentimentGTContainer}>{articlesentence}&nbsp;
+        <span className={classes.sentimentGAPos}>({articlesentiment} {sentimentscore})</span></p>}
     </React.Fragment>
   )
 }

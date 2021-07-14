@@ -46,13 +46,13 @@ const MainApp = () => {
         <SideBar menu={Menu} />
         <Layout style={{width:'100%', backgroundColor:'#fff'}} className="site-layout-background ">
           <Row>
-            <Col xs={24} xxl={24}>
+            <Col xs={24} xxl={22}>
                 <Suspense fallback={<SpinnerContainer/>}>
                   <Switch>
                     <Route path='/main' render={() => <MainContainer/>}/>
                     {listInstruments}
-                    <Route path='/comment' render={() => <PostsPage/>}/>
-                    <Route path='/documentation' render={() => <Documentation/>}/>
+                    <Route path='/feedback' render={() => <PostsPage/>}/>
+                    <Route path='/about' render={() => <Documentation/>}/>
                     <Route path='/page404' render={() => <Page404Container/>}/>
                     <Route path='/' render={() => <MainContainer/>} />
                     <Route render={() => <Redirect to={{pathname: "/page404"}}/>}/>
