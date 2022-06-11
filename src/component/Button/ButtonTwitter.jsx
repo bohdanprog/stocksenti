@@ -12,6 +12,7 @@ import {
   requestTwitterSentimentWeek,
   requestTwitterSentimentYear
 } from "../../redux/stocksReducer";
+import classes from "./ButtonStyle.module.css";
 
 
 export const ButtonTwitter = ({instrument}) => {
@@ -33,7 +34,7 @@ export const ButtonTwitter = ({instrument}) => {
     dispatch(requestTwitterSentimentYear(instrument));
   }
   return (
-    <Space align={'center'} style={{marginLeft: '5px'}}>
+    <Space align={'center'} className={classes.ButtonContainer}>
       <Button size={"middle"} type="primary" icon={<BiCalendarWeek style={{marginRight: '5px'}}/>}
               onClick={() => {getStocksAndTwitterSentimentDayData(instrument)}}>Day</Button>
       <Button size={"middle"} type="primary" icon={<BiCalendarWeek style={{marginRight: '5px'}}/>}

@@ -3,7 +3,7 @@ import {Avatar} from 'antd';
 const Logo = ({logo}) => {
   return (
     <div>
-      <Avatar size={64} src={logo}/>
+      <Avatar size={{ xs: 44, xxl: 64}} src={logo}/>
     </div>
 )
 }

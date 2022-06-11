@@ -20,11 +20,11 @@ export const MainTabs: React.FC<PropsType> = React.memo(({instrument, instrument
     dispatch(requestGoogleSentimentDay(instrument))
     dispatch(requestStocksDay(instrument))
   }, [dispatch, instrument]);
-  const stocksData = useSelector(getStock);
-  let lastValueData = stocksData.pop();
   const twitterSentiment:Array<TwitterSentimentType> = useSelector(getTwitterSentiment);
   const googleSentiment: Array<GoogleSentimentType> = useSelector(getGoogleSentiment);
-  if (lastValueData === false) {
+  const stocksData = useSelector(getStock);
+  let lastValueData = stocksData.pop();
+  if (lastValueData === undefined) {
     return <SpinnerContainer/>;
   }
   return (

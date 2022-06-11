@@ -17,35 +17,59 @@ export const StatisticsGoogle: React.FC<StatisticsTabsPropsType> = React.memo(({
   if (!googleSentiment) {
     return <SpinnerContainer/>
   }
-  const getGoogleCount = googleSentiment.reduce((prev, cur) => prev + cur.googlenewsperiodscount, 0);
-  const getGooglePositiveCount = googleSentiment.reduce((prev, cur) => prev + cur.googlenewsperiodstitlepositivecount, 0);
-  const getGoogleNegativeCount = googleSentiment.reduce((prev, cur) => prev + cur.googlenewsperiodstitlenegativecount, 0);
-  const getGoogleNeutralCount = getGoogleCount - getGooglePositiveCount - getGoogleNegativeCount;
+  let getGooglePositiveAverage = 0;
+  let getGoogleNegativeAverage = 0;
+  let getGoogleNeutralAverage = 0;
+  let getGoogleCount = 0;
+  let getGooglePositiveCount = 0
+  let getGoogleNegativeCount = 0
+  let getGoogleNeutralCount = 0
+  debugger;
+  if(googleSentiment.length>0) {
+
+  getGoogleCount = googleSentiment.reduce((prev, cur) => prev + cur.googlenewsperiodscount, 0);
+  getGooglePositiveCount = googleSentiment.reduce((prev, cur) => prev + cur.googlenewsperiodstitlepositivecount, 0);
+  getGoogleNegativeCount = googleSentiment.reduce((prev, cur) => prev + cur.googlenewsperiodstitlenegativecount, 0);
+  getGoogleNeutralCount = getGoogleCount - getGooglePositiveCount - getGoogleNegativeCount;
 
   const getGooglePositiveCountFirst = googleSentiment[0].googlenewsperiodscontentpossum;
-  const getGooglePositiveCountLast = googleSentiment[googleSentiment.length - 1].googlenewsperiodscontentpossum;
-  const getGooglePositiveAverage = getGooglePositiveCountFirst / getGooglePositiveCountLast;
+  const getGooglePositiveCountLast = googleSentiment[googleSentiment.length - 1].googlenewsperiodscontentpossum;  
 
+  if(getGooglePositiveCountLast !== 0){
+    getGooglePositiveAverage = (getGooglePositiveCountLast - getGooglePositiveCountFirst) / getGooglePositiveCountLast * 100;
+  }else{
+    getGooglePositiveAverage = (getGooglePositiveCountLast - getGooglePositiveCountFirst) / 1 * 100;
+  }
+  
   const getGoogleNegativeCountFirst = googleSentiment[0].googlenewsperiodscontentnegsum;
   const getGoogleNegativeCountLast = googleSentiment[googleSentiment.length - 1].googlenewsperiodscontentnegsum;
-  const getGoogleNegativeAverage = getGoogleNegativeCountFirst / getGoogleNegativeCountLast;
+  if(getGoogleNegativeCountLast !== 0){
+    getGoogleNegativeAverage = (getGoogleNegativeCountLast - getGoogleNegativeCountFirst) / getGoogleNegativeCountLast* 100;
+  }else{
+    getGoogleNegativeAverage = (getGoogleNegativeCountLast - getGoogleNegativeCountFirst) / 1* 100;
+  }
 
   const getGoogleNeutralCountFirst = googleSentiment[0].googlenewsperiodscontentneusum;
   const getGoogleNeutralCountLast = googleSentiment[googleSentiment.length - 1].googlenewsperiodscontentneusum;
-  const getGoogleNeutralAverage = getGoogleNeutralCountFirst / getGoogleNeutralCountLast;
+  if(getGoogleNeutralCountLast !== 0){
+    getGoogleNeutralAverage = (getGoogleNeutralCountLast - getGoogleNeutralCountFirst) / getGoogleNeutralCountLast* 100;
+  }else{
+    getGoogleNeutralAverage = (getGoogleNeutralCountLast - getGoogleNeutralCountFirst) / 1* 100;
+  }
+  }
 
   return (
     <>
-      <Divider style={{margin:0, padding:0}} />
-      <Row justify='center' align='middle' style={{display:'flex'}}>
+      <Divider style={{margin:5, padding:0}} />
+      <Row justify='start' style={{display:'flex', marginLeft: '1rem'}}>
         <LogoSocial logo={LogoGoogle}/>
-        <Col xs={{span: 6}} xxl={{span: 4}}><StatisticGoogleSummaryArticle value={getGoogleCount}/></Col>
-        <Col xs={{span: 6}} xxl={{span: 4}}><StatisticGoogleArticlePositive percent={getGooglePositiveAverage}
+        <Col xs={{span: 5}} xxl={{span: 2}}><StatisticGoogleSummaryArticle value={getGoogleCount}/></Col>
+        <Col xs={{span: 5}} xxl={{span: 2}}><StatisticGoogleArticlePositive percent={getGooglePositiveAverage}
                                                                              value={getGooglePositiveCount}/></Col>
-        <Col xs={{span: 6}} xxl={{span: 4}}><StatisticGoogleArticleNegative percent={getGoogleNegativeAverage}
+        <Col xs={{span: 5}} xxl={{span: 2}}><StatisticGoogleArticleNegative percent={getGoogleNegativeAverage}
                                                                              value={getGoogleNegativeCount}/></Col>
-        {/*<Col xs={{span: 10}} xxl={{span: 4}}><StatisticGoogleArticleNeutral percent={getGoogleNeutralAverage}*/}
-        {/*                                                                    value={getGoogleNeutralCount}/></Col>*/}
+        <Col xs={{span: 5}} xxl={{span: 2}}><StatisticGoogleArticleNeutral percent={getGoogleNeutralAverage}
+                                                                            value={getGoogleNeutralCount}/></Col>
       </Row>
     </>
   )

@@ -33,7 +33,7 @@ export const TabsConnect: React.FC<PropsType> = React.memo(({
   return (
     <div className={classes.responsiveTabs}>
       <ResponsiveContainer>
-        <Tabs defaultActiveKey="1" tabPosition={'top'} size={'large'} centered={true} style={{margin: 0, padding: 0}}>
+        <Tabs defaultActiveKey="1" tabPosition={'top'} centered={true} type={'card'}>
           <TabPane tab={<span><AiOutlineFileSearch/>Overview</span>} key="1">
             <OverviewFull instrument={instrument} instrumentphoto={instrumentphoto} stocksymbols={stocksymbols}
                           twitterSentiment={twitterSentiment} googleSentiment={googleSentiment}

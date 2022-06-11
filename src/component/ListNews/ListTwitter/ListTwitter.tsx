@@ -1,23 +1,19 @@
 import React from 'react'
 import {ListTwitterNews} from "./ListTwitterNews";
 import {List} from "antd";
-import SpinnerContainer from "../../Spiner/SpinnerContainer";
 import {TwitterNewsType} from "../../../type/types";
 
 interface ListTwitterI{
   logo:string
   twitterNews: Array<TwitterNewsType>
+  loading:boolean
 }
-export const ListTwitter: React.FC<ListTwitterI> = React.memo(({logo, twitterNews}) => {
-  if (!twitterNews) {
-    return <SpinnerContainer/>;
-  }
+export const ListTwitter: React.FC<ListTwitterI> = React.memo(({loading,logo, twitterNews}) => {
   return (
     <React.Fragment>
-      <List grid={{
-        gutter: 16, xs: 1, sm: 1, md: 1, lg: 1, xl: 1, xxl: 1,}}
+      <List loading={loading}
             pagination={{showLessItems: true, showSizeChanger: false, responsive: true,
-              hideOnSinglePage: true, pageSize: 5, position: 'both'}}
+              hideOnSinglePage: true, pageSize: 20, position: 'both'}}
             rowKey={'key'}
             itemLayout="vertical"
             size="default"

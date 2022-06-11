@@ -1,19 +1,18 @@
 import {instrumentsAPI} from "../api/Api";
 import {EntityConfigListType} from "../type/types";
-
-const SET_STOCKS = 'SET_STOCKS'
+import {AppStateType, InferActionsTypes} from "./ReduxStore";
+import {ThunkAction} from "redux-thunk";
 
 let initialState = {
   entityConfigList: [] as Array <EntityConfigListType>
 };
 
-export type InitialStateType = typeof initialState;
+type InitialState = typeof initialState;
 
-const instrumentsReducer = (state = initialState, action:any):InitialStateType => {
+const instrumentsReducer = (state = initialState, action:ActionsTypes) => {
     switch (action.type) {
-      case SET_STOCKS: {
+      case 'SET_STOCKS': {
         return {
-          //take old users and will add new users who come with action
           ...state,
           entityConfigList: action.entityConfigListAPI,
         }
@@ -25,16 +24,18 @@ const instrumentsReducer = (state = initialState, action:any):InitialStateType =
 ;
 
 //action creator
-export const setStocks = (entityConfigListAPI:any) => (
-  {type: SET_STOCKS, entityConfigListAPI});
-
+type ActionsTypes = InferActionsTypes<typeof actions>
+const actions = {
+  setInstruments:(entityConfigListAPI:InitialState) => ({type: 'SET_STOCKS', entityConfigListAPI} as const)
+}
 // thunk creator
 
-export const requestStocks = () => {
-  return (dispatch:any) => {
-    instrumentsAPI.entitiesConfigurationController()
-      .then(response => dispatch(setStocks(response.data))
-    )
+type ThunkType = ThunkAction<Promise<void>, AppStateType, unknown, ActionsTypes>
+
+export const requestInstruments = (): ThunkType => {
+  return async (dispatch) => {
+    let response = await instrumentsAPI.entitiesConfigurationController()
+      dispatch(actions.setInstruments(response.data));
   };
 };
 

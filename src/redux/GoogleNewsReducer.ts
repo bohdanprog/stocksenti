@@ -5,12 +5,10 @@ import {AppStateType, InferActionsTypes} from "./ReduxStore";
 
 let initialState = {
   googleNewsInfo: [] as Array<GoogleNewsType>,
-    // articlesentiment: '' as string
+  loading: true as boolean
 };
 
-export type InitialState = typeof initialState;
-// export type FilterData = typeof initialState.filterData;
-// export type SentimentType = typeof initialState.articlesentiment;
+type InitialState = typeof initialState;
 
 const googleNewsReducer = (state = initialState, action: ActionsTypes) => {
   switch (action.type) {
@@ -18,46 +16,9 @@ const googleNewsReducer = (state = initialState, action: ActionsTypes) => {
       return {
         ...state,
         googleNewsInfo:action.getLastData,
-
+        loading: false,
       }
     }
-    // case "SET_FILTER_DATA": {
-    //   return {
-    //     ...state,
-    //     fgoogleNewsInfo: action.title
-    //   }
-    // }
-    // case 'SET_RESULTS': {
-    //   debugger
-    //   return{
-    //     ...state,
-    //     articlesentiment:action.sentiment
-    //   }
-    // }
-    // case 'SET_DAY_DATE': {
-    //   return {
-    //     ...state,
-    //     stocksInfo: action.getDayData,
-    //   }
-    // }
-    // case 'SET_WEEK_DATE': {
-    //   return {
-    //     ...state,
-    //     stocksInfo: action.getWeekData,
-    //   }
-    // }
-    // case 'SET_MONTH_DATE': {
-    //   return {
-    //     ...state,
-    //     stocksInfo: action.getMonthData,
-    //   }
-    // }
-    // case 'SET_YEAR_DATE': {
-    //   return {
-    //     ...state,
-    //     stocksInfo: action.getYearData,
-    //   }
-    // }
     default:
       return state;
   }
@@ -68,12 +29,6 @@ type ActionsTypes = InferActionsTypes<typeof actions>
 //action creator
 const actions = {
   setGoogleNewsLastData: (getLastData: InitialState) => ({type: 'SET_LAST_DATA', getLastData} as const),
-  // setFilterData: (filterData: FilterData) => ({type: 'SET_FILTER_DATA', title: filterData} as const),
-  // setSentimentData: (sentiment: SentimentType) => ({type: 'SET_RESULTS', sentiment} as const),
-  // setGoogleNewsDayData: (getDayData: InitialState) => ({type: 'SET_DAY_DATE', getDayData} as const),
-  // setGoogleNewsWeekData: (getWeekData: InitialState) => ({type: 'SET_WEEK_DATE', getWeekData} as const),
-  // setGoogleNewsMonthData: (getMonthData: InitialState) => ({type: 'SET_MONTH_DATE', getMonthData} as const),
-  // setGoogleNewsYearData: (getYearData: InitialState) => ({type: 'SET_YEAR_DATE', getYearData} as const),
 }
 
 // thunk creator
@@ -86,22 +41,6 @@ export const requestGoogleNewsLastData = (getLastData: string): ThunkType => {
   };
 };
 
-export const requestGoogleNewsFindArticleStream = (title:Array<GoogleNewsType>): ThunkType => {
-  return async (dispatch) => {
-    debugger
-    // @ts-ignore
-    dispatch(actions.setGoogleNewsLastData(title));
-  };
-};
-
-// export const requestGoogleNewsFilterResultsStream = (positive:string, negative:string,neutral:string, instrument: string): ThunkType => {
-//   debugger;
-//   return async (dispatch) => {
-//     dispatch(actions.setSentimentData(positive|| negative ||neutral));
-//     let response = await googleNewsController.googleNewsFilterArticleStream(positive|| negative ||neutral, instrument);
-//     dispatch(actions.setGoogleNewsLastData(response.data));
-//   };
-// };
 // export const requestGoogleNewsDayData = (getDayData:InitialState):ThunkType => {
 //   return async (dispatch) => {
 //     let response = await googleNewsController.googleNewsStream(getDayData);

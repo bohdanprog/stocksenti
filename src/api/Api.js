@@ -9,12 +9,15 @@ const instance = axios.create({
   baseURL: 'https://stocksentibackend.azurewebsites.net/',
 });
 
+debugger;
 let date = new Date();
-let yesterday = date.setDate((date.getDate() - 1));
-let yesterdayConvert = moment(yesterday).utc(true).format("YYYY-MM-DD [T] HH:MM:SS");
+let sDate = new Date().toISOString;
+let startsDate = moment(sDate).format('YYYY-MM-DD HH:mm:ss');
+let yesterday = date.setDate((date.getUTCDate() - 1));
+let yesterdayConvert = moment(yesterday).utc(true).format("YYYY-MM-DD [T] HH:mm:ss");
 let currentDate = new Date();
-let c = currentDate.setDate((currentDate.getDate()));
-let dateTime = moment(c).format('YYYY-MM-DD HH:MM:SS');
+let c = currentDate.setDate((currentDate.getUTCDate()));
+let dateTime = moment(c).format('YYYY-MM-DD HH:mm:ss');
 
 export const instrumentsAPI = {
   entitiesConfigurationController() {
@@ -52,13 +55,19 @@ export const stocksController = {
   },
 }
 
+export const chartController = {
+  chartStream (instrument, endDate, startDate = dateTime) {
+    return instance.get(`/chart/getChartData/${instrument}/${endDate}/${startDate}`)
+  },
+}
+
 export const PostsController = {
   requestAllPosts () {
     return instance.get(`post/getPosts`)
   },
-  addPost ( text,username,created= dateTime, likesCount=0, comments=[null]) {
+  addPost ( username,text,created= dateTime, likesCount= 0) {
     debugger
-    return instance.post(`post/addPost`, {username,created, text, likesCount, comments})
+    return instance.post(`post/addPost`, {username, text ,created, likesCount})
   },
   addPostLike (postId) {
     return instance.post(`post/addLike/${postId}`, {})

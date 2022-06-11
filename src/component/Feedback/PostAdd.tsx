@@ -26,8 +26,8 @@ export const PostAdd: React.FC<PropsType> = React.memo(({onAddPost}) => {
           setSubmitting(false);
           resetForm({})}}>
         <Form>
-          <Input className={classes.containerForm} id="username" name="username" placeholder="Username" />
-          <Input.TextArea className={classes.containerForm} id="text" name="text" placeholder="Some text" rows={3}/>
+          <Input className={classes.containerForm} id="username" name="username" placeholder="Your nickname" />
+          <Input.TextArea className={classes.containerForm} id="text" name="text" placeholder="What do you think?" rows={3}/>
           <SubmitButton>Post</SubmitButton>
         </Form>
       </Formik>
