@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="40d2df98-750d-437f-9fac-3defe94e82f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/._.DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._azure-pipelines.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._public" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._serviceWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._src" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/._yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/stocksenti.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/stocksenti.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/azure-pipelines.yml" beforeDir="false" afterPath="$PROJECT_DIR$/azure-pipelines.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/.eslintcache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/00/66/e481ced83db44037c30438fb955d142f7f709bb7debbce0acc4d107a9e67e63e864b772fd434bad4ecf531f30c2867e711e6e657e1c52b41dcb055bec4b7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/content-v2/sha512/39/84/a375ca8740a6713fe8464595bcac6a28be5ce97275f1b1c29a13898214f11632ceec4bed6867a2a974a4e82666b05075addf2b19e87426448c57932c2fb0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/index-v5/5e/b4/5cd71ed8876e15babb6484af5ca7bfceb75bdcb59fffd568613ef0cb2a7b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.cache/terser-webpack-plugin/index-v5/cf/46/6a8ec97ae86393d3b14cc6e7bbc2de0256e8df249b4ae4ea686e6831703a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo144.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo144.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo192.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo192.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/logo512.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/logo512.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" afterPath="$PROJECT_DIR$/public/robots.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Avatar/Logo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avatar/Logo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Avatar/LogoSocial.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Avatar/LogoSocial.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Selector/selector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Selector/selector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/Google.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/Google.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/by-me-a-coffee.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/by-me-a-coffee.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/by-me-a-coffee.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/by-me-a-coffee.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/patreon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/patreon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/twitter-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/twitter-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Button/ButtonGoogle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Button/ButtonGoogle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Button/ButtonOverview.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Button/ButtonOverview.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Button/ButtonTwitter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Button/ButtonTwitter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Card/CardNews.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Card/CardNews.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Diagram/Diagram.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Diagram/Diagram.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Diagram/Diagram.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Diagram/Diagram.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Diagram/DiagramContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Diagram/DiagramContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Documentation/Documentation.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Documentation/Documentation.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Feedback/PostAdd.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Feedback/PostAdd.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Feedback/PostStyle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Feedback/PostStyle.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Feedback/Posts.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Feedback/Posts.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Feedback/PostsPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Feedback/PostsPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/List.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/List.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/ListGoogleArticle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/ListGoogleArticle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/ListGoogleContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/ListGoogleContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/ListGoogleNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/ListGoogleNews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/SentimentGoogleDescription.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/SentimentGoogleDescription.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/SentimentGoogleTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/ListGoogle/SentimentGoogleTitle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/ListTwitter/ListTwitter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/ListTwitter/ListTwitter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/ListTwitter/ListTwitterNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/ListTwitter/ListTwitterNews.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ListNews/ListTwitter/SentimentTwitterTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ListNews/ListTwitter/SentimentTwitterTitle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Main/MainContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Main/MainContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/MenuItem/MenuItemContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MenuItem/MenuItemContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/MenuItem/MenuItemSupport/MenuItemSupport.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/MenuItem/MenuItemSupport/MenuItemSupport.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/NavBar/NavBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/NavBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/NavBar/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/NavBar/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Page404/Page404Container.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Page404/Page404Container.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/SideBar/SideBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/SideBar/SideBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/SideBar/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/SideBar/SideBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Spiner/SpinnerContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Spiner/SpinnerContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticGoogleArticleNegative.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticGoogleArticleNegative.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticGoogleArticleNeutral.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticGoogleArticleNeutral.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticGoogleArticlePositive.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticGoogleArticlePositive.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticGoogleSummaryArticle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticGoogleSummaryArticle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticsGoogle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/GoogleStatistics/StatisticsGoogle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/Statistic.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/Statistic.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticTwitterArticleNegative.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticTwitterArticleNegative.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticTwitterArticleNeutral.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticTwitterArticleNeutral.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticTwitterArticlePositive.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticTwitterArticlePositive.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticTwitterSummaryArticle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticTwitterSummaryArticle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticsTwitter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Statistic/TwitterStatistics/StatisticsTwitter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/FullViewTabs/GoogleFull.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/FullViewTabs/GoogleFull.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/FullViewTabs/MainInfoAboutInstrument.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/FullViewTabs/MainInfoAboutInstrument.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/FullViewTabs/OverviewFull.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/FullViewTabs/OverviewFull.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/FullViewTabs/TwitterFull.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/FullViewTabs/TwitterFull.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/GoogleTabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/GoogleTabs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/OverviewTabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/OverviewTabs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/Tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/Tabs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/TabsStyle.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/TabsStyle.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/TwitterTabs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/TwitterTabs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/WordCloud.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/WordCloud.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Tabs/word.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Tabs/word.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/mainTabs/MainTabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/mainTabs/MainTabs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/GoogleNewsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/GoogleNewsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/ReduxStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/ReduxStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/TwitterNewsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/TwitterNewsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/appReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/instrumentsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/instrumentsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/postsReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/postsReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/stocksReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/stocksReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reportWebVitals.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reportWebVitals.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/setupTests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/type/types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/type/types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1tOCnHnsxE4rFkVwF4pJmcOjdxG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="40d2df98-750d-437f-9fac-3defe94e82f8" name="Default Changelist" comment="" />
+      <created>1622630914111</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622630914111</updated>
+      <workItem from="1622630918160" duration="227000" />
+      <workItem from="1627403258274" duration="705000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>
